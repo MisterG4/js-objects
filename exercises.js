@@ -17,7 +17,18 @@ A literal object.
  
  "My dog `name` is `age` year old likes to `speak`."
  */ 
+var dog = {
+  name: 'Kamau',
+  age: 2,
+  vegeterian: false,
+  color: ['black', 'tan', 'white'],
+  speak: function(){
+    return 'woof!';
+  } 
 
+
+};
+console.log("My dog " + dog.name + " is " + dog.age + " year old likes to " + dog.speak());
 
 /*
 An empty object
@@ -31,8 +42,15 @@ An empty object
             
   Console.log the object.
 */
-
-
+var kicks = {};
+kicks.brand = 'nike';
+kicks.color = "red";
+kicks.size = 9.5;
+kicks.buy = function(){
+  return 'Hell Yea!';
+};
+console.log(kicks);
+console.log(kicks.buy());
 /* 
    Declare a variable named `plainBox` and set its value to be an EMPTY object.
    Next, you will add three properties to this object. 
@@ -40,7 +58,12 @@ An empty object
             - add a property named `size` and set it to a number value between `0` and `20`.
             - add a property named `contents` and set it to be an empty array.
 */
+var plainBox = {};
+  plainBox.color = 'black';
+  plainBox.size = 15;
+  plainBox.contents = [];
 
+console.log(plainBox);
 
 /*
    Declare a variable named `stockCar` and create the following properties (key-value pairs) to the object:
@@ -51,7 +74,13 @@ An empty object
             - add a key named `passengers` and set it to be an empty array.
 */
 
+var stockCar  = {
+  automaticTransmission: false,
+  driver: null,
+  passengers: [],
 
+};
+console.log(stockCar);
 /*
    Add new property inside a function
    Declare a variable named `plainPerson`. Set its value to be an EMPTY object with no properties.
@@ -67,7 +96,11 @@ An empty object
    the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just 
    the value at `name`, and just the value at `age`.
  */
-
+var plainPerson = {};
+function buildPerson(person, nameString, age){
+  
+  
+}
 
 /*
    Display values of objects that are inside an array
